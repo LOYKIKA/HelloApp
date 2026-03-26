@@ -1,12 +1,18 @@
 /*
-*HelloApp UC1
+*HelloApp UC3
 *
 *@author Loykika
-*@version 1.0 
+*@version 3.0 
 */
 
 public class HelloApp {
     public static void main(String[] args) {
-        System.out.println("Hello, World!");
+        String name = "World";
+
+        if (args.length > 0){
+            name = args[0];
+        }
+        
+        System.out.println("Hello, " + name + "!");
     }
 }
